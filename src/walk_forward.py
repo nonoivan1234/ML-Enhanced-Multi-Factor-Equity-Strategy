@@ -77,3 +77,8 @@ if __name__ == "__main__":
     df = load_labeled()
     results = walk_forward_backtest(df, start_year=2018, end_year=2024)
     summarize_performance(results)
+    
+    # Save results
+    save_path = "data/processed/backtest_results.parquet"
+    results.to_parquet(save_path)
+    print(f"Backtest results saved to {save_path}")

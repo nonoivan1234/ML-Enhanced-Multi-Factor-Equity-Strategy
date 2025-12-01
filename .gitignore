@@ -1,1 +1,14 @@
-data/
+# Ignore all raw & processed data
+data/raw/
+data/processed/
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore compiled python
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
+*.log
